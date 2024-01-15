@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weither</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body class="position-relative">
+<section id="loading" class="bg-light position-absolute top-0 start-0 end-0 min-vh-100 d-flex justify-content-center align-items-center" style="z-index: 999">
+    <i class="fas fa-spinner fa-2x fa-spin"></i> <!--fa-spin : make the spinner turn-->
+</section>
+<section id="main">
+    <div class="container p-5 ">
+        <div  class="search text-center">
+            <div class="position-relative w-50 m-auto">
+                <i class="px-4 fa-solid fa-magnifying-glass fa-1x position-absolute start-0 top-50 translate-middle-y"></i>
+                <input id="search-input" type="text" class="w-100 rounded-pill border-0 px-5 py-2 " placeholder="Search City..."/>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" row g-3  my-4"  >
+                <div class="col-md-4 pb-0">
+                    <div class="border border-1 rounded layer h-100">
+                        <div class="head rounded-top px-3 pt-2 d-flex  justify-content-between align-items-center">
+                            <p id="today" class="">Monday</p>
+                            <p id="month" class="">01 January</p>
+                        </div>
+                        <div class="p-3 text-light">
+                            <div class="d-flex  w-50 justify-content-between">
+                                <h4 id="city_location">City</h4>
+                                <h6 id="country" class="ps-2 align-self-end">country</h6>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 id="today-degree">°C</h2>
+                                <img id="icon" src="" style="width: 60px ;height: 60px ;object-fit: cover;" alt=""/>
+                            </div>
+                            <p id="description"></p>
+                            <div>
+                                <table width="100">
+                                    <tr style="height: 20px">
+                                        <td><i class="fa-solid fa-droplet"></i></td>
+                                        <td class=" pt-3"><p id="humidity"></p></td>
+                                        <td><i class="fa-solid fa-wind"></i></td>
+                                        <td class=" pt-3"><p id="wind"></p></td>
+                                        <td><i class="fa-solid fa-compass"></i></td>
+                                        <td class="pt-3 "><p id="wind-dir"></p></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  ">
+                    <div class="border border-1 rounded layer h-100">
+                        <div class="head rounded-top px-3 pt-2 d-flex  justify-content-center align-items-center">
+                            <p  class="next-day">Monday</p>
+                        </div>
+                        <div class="p-3 text-light">
+                            <div  class="mx-auto" style="width: fit-content">
+                                <img class="icon mx-auto" src="" style="width: 60px ;height: 60px ;object-fit: cover;" alt=""/>
+                            </div>
+                            <div class="pt-3 d-flex flex-column  align-items-center justify-content-between ">
+                                <h2 class="max-degree">°C</h2>
+                                <h5 class="min-degree">°C</h5>
+                                <p class="text-center description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  ">
+                    <div class="border border-1 rounded layer h-100">
+                        <div class="head rounded-top px-3 pt-2 d-flex  justify-content-center align-items-center">
+                            <p  class="next-day">Monday</p>
+                        </div>
+                        <div class="p-3 text-light">
+                            <div  class="mx-auto" style="width: fit-content">
+                                <img class="icon mx-auto" src="" style="width: 60px ;height: 60px ;object-fit: cover;" alt=""/>
+                            </div>
+                            <div class="pt-3 d-flex flex-column  align-items-center justify-content-between ">
+                                <h2 class="max-degree">°C</h2>
+                                <h5 class="min-degree">°C</h5>
+                                <p class="text-center description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="m-auto py-2 px-4 " style="width: fit-content">
+        <p class="pt-3 text-light">Copyright © 2024 Designed by <span class="text-primary">ElFadili</span>. All rights reserved</p>
+        <div class="logos m-auto" style="width: fit-content">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+</footer>
+<script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
